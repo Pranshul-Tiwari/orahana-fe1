@@ -1,3 +1,15 @@
+@import "./assets/styles/_variables.scss";
+@import "./assets/styles/_mixins.scss";
+@import "./assets/styles/_fonts.scss";
+@import "./assets/styles/_common.scss";
+@import "./assets/styles/_header.scss"; 
+@import "./assets/styles/_modal.scss";
+
+@import './components/Landing/Landing.scss';
+@import './components/NavbarTop/NavbarTop.scss';
+@import './components/NavbarBottom/NavbarBottom.scss';
+
+
 .App {
   text-align: center;
 }
