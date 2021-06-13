@@ -1,0 +1,71 @@
+/*--  Common Styles  --*/
+body{
+    color: $grey_text;
+    font-family: $roboto;
+    letter-spacing: 0.5px;
+}
+*{
+    outline: none;
+    text-decoration: none;
+}
+.pad-0{
+    padding: 0 !important;
+}
+.mar-0{
+    margin: 0 !important;
+}
+.mb-20{
+    margin-bottom: 20px;
+}
+.border-none{
+    border: 0 !important;
+}
+.rating{
+    display: inline-block;
+    ul{
+        margin: 0; 
+        li{
+            padding: 0;
+            font-size: 18px;
+            color: $light_grey;
+            &.selected{
+                color: $light_blue;
+            }
+        }
+    }
+}
+.btn-grey{
+    color: $light_blue;
+    padding: 5px 15px;
+    font-size: 11px;
+    font-family: $roboto_medium;
+    text-transform: uppercase;
+    background-color: $grey;
+    @include border-radius(20px);
+    @include transition(0.3s all ease-in-out);
+    &:hover, &:focus{
+        color: $light_blue;
+    }
+}
+
+.icon-list{
+    margin: 0;
+    display: inline-block;
+    li{
+        a{
+            color: $grey_bg;
+            padding: 2px;
+            display: inline-block;
+            font-size: 18px;
+            text-align: center;
+            background-color: $light_grey;
+            @include circle(30px);
+        }
+    }
+}
+/*--  Media Styles  --*/
+@media(max-width: 500px){
+    .hidden-500{
+        display: none !important;
+    }
+}

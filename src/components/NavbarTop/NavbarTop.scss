@@ -1,0 +1,93 @@
+.navigation-wrapper{
+    // background-color: $theme_color;
+    background-color: rgba($white, 0.75);
+    .navigation{
+        width: 100%;
+        padding: 0 16px;
+        max-width: 1440px;
+        .navbar-brand{
+            img{
+                height: 60px;
+            }
+        }
+        .navbar-toggler{
+            top: 15px;
+            left: 16px;
+            width: 36px;
+            height: 40px;
+            padding: 0;
+            outline: none !important;
+            position: absolute;
+            box-shadow: none !important;
+            &.navbar-opened{
+                // This is left out intentionally for xxx
+            }
+            .navbar-toggler-icon{
+                top: 50%;
+                left: 0;
+                width: 24px;
+                height: 2px;
+                position: absolute;
+                transform: translate(0, -50%);
+                background-color: #333;
+                &:before, &:after {
+                    left: 0;
+                    height: 2px;
+                    content: "";
+                    position: absolute;
+                    background-color: #333;
+                }
+                &:before{
+                    top: -8px;
+                    width: 20px;
+                }
+                &:after{
+                    top: 8px;
+                    width: 28px;
+                }
+            }
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                .nav-item{
+                    &:not(:last-of-type){
+                        .nav-link{
+                            margin-right: 20px;
+                        }
+                    }
+                    .nav-link{
+                        color: $theme_color;
+                        height: 34px;
+                        border: 1px solid $theme_color;
+                        padding: 4px 24px;
+                        transition: all 0.3s ease-in-out;
+                        font-family: $fone_regular;
+                        &:hover{
+                            color: $white;
+                            background-color: $theme_color;
+                        }
+                        &.incart-wrapper{
+                            display: flex;
+                            position: relative;
+                            align-items: center;
+                            justify-content: center;
+                            .nav-incart{
+                                top: 0px;
+                                right: 14px;
+                                color: $white;
+                                display: flex;
+                                position: absolute;
+                                font-size: 10px;
+                                margin-left: 5px;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: $theme_color1;
+                                @include circle(16px);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
