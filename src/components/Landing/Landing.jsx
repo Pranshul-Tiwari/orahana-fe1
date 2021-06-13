@@ -1,24 +1,24 @@
 import React from 'react';
-import logo from '../../assets/images/logo.svg';
+import MainBanner from './MainBanner/MainBanner';
+import ShopBanner from './ShopBanner/ShopBanner';
+import ShopBanner1 from './ShopBanner1/ShopBanner1';
+import WriteTous from './WriteTous/WriteTous';
 
 const Landing = () => {
     return (
-        <div>
-            <header className="App-header">
-                <img src={ logo } className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reloaded.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
+        <section className="landing-wrapper">
+            <MainBanner/>
+            <div className="landing-quote-wrapper">
+                Under the endless sky and warm sun, what we are is a big family
+            </div>
+            <ShopBanner/>
+            <ShopBanner1/>
+            <ShopBanner/>
+            <div className="landing-quote-wrapper">
+                Under the endless sky and warm sun, what we are is a big family
+            </div>
+            <WriteTous/>
+        </section>
     )
 }
 
