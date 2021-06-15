@@ -1,6 +1,10 @@
 .navigation-wrapper{
     // background-color: $theme_color;
-    background-color: rgba($white, 0.75);
+    top: 0;
+    z-index: 1020;
+    position: sticky;
+    box-shadow: 0px 0px 10px 0px #ebebeb;
+    background-color: rgba($white, 1);
     .navigation{
         width: 100%;
         padding: 0 16px;
