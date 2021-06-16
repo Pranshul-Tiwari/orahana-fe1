@@ -3,6 +3,15 @@
     margin: 0 auto;
     max-width: 1440px;
     .landing-quote-wrapper{
+        width: 100%;
+        color: $theme_text;
+        height: 200px;
+        display: flex;
+        font-size: 3rem;
+        font-weight: bold;
+        align-items: center;
         font-family: $sacramento;
+        justify-content: center;
+        background-color: $theme_color;
     }
 }

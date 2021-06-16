@@ -2,7 +2,7 @@ import React from 'react'
 
 const WriteTous = () => {
     return (
-        <div>
+        <div className="contactus-wrapper">
             <form>
                 <h4 className="text-center">Write to us</h4>
                 <div className="row">

@@ -1,31 +1,36 @@
 import React, { useState } from 'react';
 import { Carousel, CarouselItem, CarouselControl, CarouselIndicators, CarouselCaption } from 'reactstrap';
+import Carousel1 from '../../../assets/images/carousel1.png'; 
+import Carousel2 from '../../../assets/images/carousel2.JPG'; 
+import Carousel3 from '../../../assets/images/carousel3.JPG'; 
+import Carousel4 from '../../../assets/images/carousel4.png'; 
+import Carousel5 from '../../../assets/images/carousel5.jpg'; 
 
 const items = [
     {
-        src: 'assets/images/carousel1.png',
+        src: Carousel1,
         altText: 'Slide 1',
         caption: 'Slide 1'
     },
     {
-        src: 'assets/images/carousel2.JPG',
+        src: Carousel2,
         altText: 'Slide 2',
         caption: 'Slide 2'
     },
     {
-        src: 'assets/images/carousel3.JPG',
+        src: Carousel3,
         altText: 'Slide 3',
         caption: 'Slide 3'
     },
     {
-        src: 'assets/images/carousel4.png',
-        altText: 'Slide 4',
-        caption: 'Slide 4'
+        src: Carousel4,
+        altText: 'Slide 3',
+        caption: 'Slide 3'
     },
     {
-        src: 'assets/images/carousel5.jpg',
-        altText: 'Slide 5',
-        caption: 'Slide 5'
+        src: Carousel5,
+        altText: 'Slide 3',
+        caption: 'Slide 3'
     }
 ];
 

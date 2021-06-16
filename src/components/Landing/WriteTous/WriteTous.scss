@@ -1,0 +1,32 @@
+.contactus-wrapper{
+    width: 100%;
+    display: flex;
+    padding: 100px 40px;
+    align-items: center;
+    justify-content: center;
+    form{
+        h4{
+            margin-bottom: 20px;
+        }
+        .form-group{
+            text-align: left;
+            margin-bottom: 16px;
+        }
+        button{
+            color: $theme_text;
+            border: 0;
+            height: 40px;
+            padding: 6px 20px;
+            min-width: 100px;
+            box-shadow: none;
+            border: 2px solid $theme_text;
+            border-radius: 0; 
+            background-color: transparent;
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: $white;
+                background-color: $theme_text;
+            }
+        }
+    }
+}
