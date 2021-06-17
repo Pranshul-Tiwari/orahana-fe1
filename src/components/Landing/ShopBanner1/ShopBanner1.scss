@@ -1,0 +1,46 @@
+.shopbanner1-wrapper{
+    .shopbanner1-content{
+        z-index: 0;
+        position: relative;
+        overflow: hidden;
+        &:hover{
+            img{
+                transform: scale(1.2);
+            }
+        }
+        img{
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+        &::after{
+            inset: 0;
+            z-index: 1;
+            content: '';
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+        button{
+            top: 50%;
+            left: 50%;
+            color: $white;
+            border: 0;
+            height: 40px;
+            padding: 6px 20px;
+            z-index: 2;
+            position: absolute;
+            min-width: 100px;
+            box-shadow: none;
+            border: 2px solid $white;
+            border-radius: 0; 
+            background-color: transparent;
+            transform: translate(-50%, -50%);
+            transition: all 0.3s ease-in-out;
+            &:hover{
+                color: $theme_text;
+                background-color: $white;
+            }
+        }
+    }
+}

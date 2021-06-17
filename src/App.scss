@@ -5,13 +5,18 @@
 @import "./assets/styles/_header.scss"; 
 @import "./assets/styles/_modal.scss";
 
-@import './components/Landing/Landing.scss';
 @import './components/NavbarTop/NavbarTop.scss';
+@import './components/Landing/Landing.scss';
+@import './components/Landing/MainBanner/MainBanner.scss';
+@import './components/Landing/ShopBanner/ShopBanner.scss';
+@import './components/Landing/ShopBanner1/ShopBanner1.scss';
+@import './components/Landing/WriteTous/WriteTous.scss';
 @import './components/NavbarBottom/NavbarBottom.scss';
 
 
 .App {
   text-align: center;
+  background-color: rgba(255, 192, 204, 0.2);
 }
 
 .App-logo {
