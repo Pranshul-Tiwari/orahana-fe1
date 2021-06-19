@@ -2,6 +2,7 @@ import React, { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.scss';
+import ProductsFilter from './components/ProductsFilter/ProductsFilter';
 import NavbarTop from './components/NavbarTop/NavbarTop';
 import NavbarBottom from './components/NavbarBottom/NavbarBottom';
 // import Landing from './components/Landing/Landing';
@@ -16,7 +17,7 @@ function App() {
           <Switch>
             <Route path="/checkout" component={Landing} />
             <Route path="/product-details" component={Landing} />
-            <Route path="/product-category" component={Landing} />
+            <Route path="/products-filter" component={ProductsFilter} />
             <Route path="/" component={Landing} />
           </Switch>
         </Suspense>

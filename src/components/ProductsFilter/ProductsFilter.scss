@@ -1,0 +1,18 @@
+.filterspage-wrapper{
+    position: relative;
+    padding-left: 25%;
+    min-height: calc(100vh - 140px);
+    .fp-left{
+        top: 70px;
+        left: 0;
+        width: 25%;
+        color: $theme_text;
+        height: calc(100vh - 140px);
+        padding: 1rem;
+        overflow: auto;
+        position: fixed;
+        background-color: $white;
+        // or this color, give a try for below one
+        // background-color: $theme_text;color: $white;
+    }
+}

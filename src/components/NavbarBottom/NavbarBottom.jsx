@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ologo from '../../assets/images/ologo.jpeg';
 import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
+import './NavbarBottom.scss';
 
 const NavbarBottom = (props) => {
 
@@ -8,7 +9,7 @@ const NavbarBottom = (props) => {
     const toggle = () => setIsOpen(!isOpen);
 
     return (
-        <section className="navigation-wrapper d-flex align-items-center justify-content-center">
+        <section className="navigation-wrapper wrapper-bottom d-flex align-items-center justify-content-center">
             <Navbar className="navigation justify-content-center justify-content-md-start" expand="sm">
                 <a href="javascript:void(0);" className="navbar-brand">
                     <img src={ologo} alt="logo" />
