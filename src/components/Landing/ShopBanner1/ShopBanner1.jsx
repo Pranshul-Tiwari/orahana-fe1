@@ -4,23 +4,23 @@ import Cushions from '../../../assets/images/cushions.JPG';
 const ShopBanner1 = () => {
     return (
         <div className="shopbanner1-wrapper">
-            <div className="row">
-                <div className="col-4">
+            <ul className="bannerlist-wrapper">
+                <li>
                     <div className="shopbanner1-content">
                         <img alt="shop by" src={Cushions} />
                         <button type="button">Shop Curtains</button>
                     </div>
-                </div>
-                <div className="col-4 d-flex align-items-center justify-content-center">
+                </li>
+                <li className="d-flex align-items-center justify-content-center">
                     Under the endless sky and warm sun, what we are is a big family
-                </div>
-                <div className="col-4">
+                </li>
+                <li>
                     <div className="shopbanner1-content">
                         <img alt="shop by" src={Cushions} />
                         <button type="button">Shop Curtains</button>
                     </div>
-                </div>
-            </div>
+                </li>
+            </ul>
         </div>
     )
 }

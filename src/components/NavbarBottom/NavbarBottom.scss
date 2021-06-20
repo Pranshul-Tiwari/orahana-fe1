@@ -1,0 +1,8 @@
+.navigation-wrapper{
+    &.wrapper-bottom{
+        top: auto;
+        width: 100%;
+        bottom: 0;
+        position: fixed;
+    }
+}
