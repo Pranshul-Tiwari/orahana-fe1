@@ -7,7 +7,7 @@ const ShopBanner = () => {
         <div className="shopbanner-wrapper">
             <img alt="shop by" src={Curtains} />
             <button type="button">
-                <Link to="/products-filter">go to my surveys</Link>
+                <Link to="/products-filter">Shop Cushions</Link>
             </button>
         </div>
     )

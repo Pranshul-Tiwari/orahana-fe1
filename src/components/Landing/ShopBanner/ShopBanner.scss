@@ -23,7 +23,6 @@
     button{
         top: 50%;
         left: 50%;
-        color: $theme_color;
         border: 0;
         height: 40px;
         padding: 6px 20px;
@@ -37,8 +36,14 @@
         transform: translate(-50%, -50%);
         transition: all 0.3s ease-in-out;
         &:hover{
-            color: $white;
             background-color: $theme_color;
+        }
+        a{
+            color: $theme_color;
+            text-decoration: none;
+            &:hover{
+                color: $white;
+            }
         }
     }
 }
